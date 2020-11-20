@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursify</title>
+    <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="tailwind.css">
+
+</head>
+<body class="overflow-x-hidden ">
+
+<nav class="pt-6 pb-3 lg:sticky top-0 z-10 bg-gray-300   ">
+<div class="inline lg:pl-64 font-extrabold text-gray-700 italic text-lg ">
+Coursify    
+</div>
+<span id="icon" class="float-right lg:hidden block pr-3 pt-2 pb-6"><svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg></span>
+<div class="lg:inline float-right hidden  pr-64 ">
+
+<a  class="px-5 font-semibold middle" href="#">Live Class</a>
+<a  class="px-5 font-semibold middle" href="#">Video Library</a>
+<a  class="px-5 font-semibold middle" href="#">Course</a>
+<a  class="px-5 font-semibold middle" href="#">Book</a>
+<a  class="px-5 font-semibold middle" href="#">Board</a>
+<a class="px-5 font-semibold middle" href="#">Exam</a>
+
+</div>
+
+
+<div id="menu-small" class="hidden mt-3 bg-gray-300 text-black">
+
+    <a  class=" flex justify-start px-2  py-3" href="#">Live Class</a>
+    <a  class=" flex justify-start px-2 py-3" href="#">Video Library</a>
+    <a  class=" flex justify-start px-2 py-3" href="#">Course</a>
+    <a  class=" flex justify-start px-2 py-3" href="#">Book</a>
+    <a  class=" flex justify-start px-2 py-3" href="#">Board</a>
+    <a class="  flex justify-start px-2 py-3" href="#">Exam</a>
+    
+    
+    
+    </div>
+
+</nav>
+
+<div class="grid sm:grid-cols-2 lg:mt-32 mt-4 ">
+    <div class="text-center ">
+    <p class="lg:text-5xl text-2xl font-extrabold pl-4 lg:pl-0 pt-5 md:pt-16 lg:pt-0 text-gray-800">Clarify Your <span class="text-blue-800">doubts</span><br> In Your Language.</p>
+    <p class="pt-16 pl-4 lg:pl-0"><a class="bg-red-600 inline text-white font-semibold hover:bg-white hover:text-red-600  p-3 rounded-2xl" href="#">
+        <svg class="w-6 h-6 inline  " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Ask Your Doubt Now
+        </a>
+    
+    </p>
+    </div>
+    
+    <div>        
+<!-- <svg id="b292e128-983c-4a50-89eb-5eccde426ab3" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="500.6192" height="5476" cy="13.26069" r="4.80734" fill="#fff"/><circle cx="37.52223" cy="13.26069" r="4.80734" fill="#fff"/><circle cx="55.76969" cy="13.26069" r="4.80734" fill="#fff"/><rect x="66.69233" y="98.33976" width="325.75609" height="183.2378" fill="#6c63ff"/><rect x="437.90276" y="98.33976" width="124.05246" height="69.77951" fill="#e6e6e6"/><rect x="437.90276" y="190.1954" width="124.05246" height="69.77951" fill="#e6e6e6"/><rect x="437.90276" y="282.05104" width="124.05246" height="69.77951" fill="#e6e6e6"/><rect x="66.69233" y="312.35393" width="224.43079" height="15.15145" fill="#e6e6e6"/><polygon points="272.184 189.959 201.161 148.954 201.161 230.963 272.184 189.959 201.161 148.954 201.161 230.963 272.184 189.959" fill="#fff"/><polygon points="729.361 539.637 732.279 554.225 717.691 557.143 719.879 538.907 729.361 539.637" fill="#ffb8b8"/><polygon points="789.076 536.983 785.772 553.502 772.182 553.83 776.521 533.679 789.076 536.983" fill="#ffb8b8"/><path d="M967.92909,527.39544l3.78786,25.56807s-3.78786,56.81792-4.73483,59.65882-3.78786,17.04537-3.78786,17.04537l-16.09841,68.18151s-13.93605,1.89393-16.777-5.68179l.67854-40.71951-.947-46.40131-11.36358-53.03006-19.88628,71.96937s-.947,23.67414-3.78786,32.19682-6.62876,45.45434-6.62876,45.45434-12.04211,2.8409-12.98908,0-5.95022-70.07543-5.95022-80.492-5.56683-110.29488-5.56683-110.29488Z" transform="translate(-157.1904 -160.11752)" fill="#2f2e41"/><path d="M933.73638,712.67729a11.74878,11.74878,0,0,0,4.73134,0c1.77425-.59142,0-4.13993,0-4.13993h6.50559s7.097,15.96827,10.05409,17.15111,12.41977,14.194,1.18284,14.194a36.71857,36.71857,0,0,1-19.51677-5.91417s-1.18284-5.32276-6.50559-5.91418-8.87126-7.097-8.87126-7.097l5.77716-10.66554a1.91327,1.91327,0,0,1,3.3547-.00669C931.25178,711.70366,932.36731,712.9511,933.73638,712.67729Z" transform="translate(-157.1904 -160.11752)" fill="#2f2e41"/><path d="M884.23812,710.8453s-1.31913,2.63826-2.63826,1.31913a18.06967,18.06967,0,0,1-2.63826-4.617s-3.95738-1.97869-4.61695,0-3.29782,12.53172-4.61695,13.85085-15.17,15.17-1.31912,17.80823,16.4891-3.29782,16.4891-3.29782-1.97869-3.29782,1.97869-4.61695,4.617-5.93608,4.617-5.93608l-1.98763-14.90725a1.6153,1.6153,0,0,0-2.89516-.74735C885.846,710.6982,884.994,711.34919,884.23812,710.8453Z" transform="translate(-157.1904 -160.11752)" fill="#2f2e41"/><path d="M989.70929,461.10787l2.8409,49.2422s13.25751,31.24985-4.73483,30.30289-6.62876-31.24986-6.62876-31.24986L963.57081,465.455Z" transform="translate(-157.1904 -160.11752)" fill="#ffb8b8"/><path d="M843.87662,446.90339l-2.84089,49.2422s-13.25752,31.24985,4.73482,30.30289,6.62876-31.24986,6.62876-31.24986L870.0151,451.2505Z" transform="translate(-157.1904 -160.11752)" fill="#ffb8b8"/><circle cx="762.44343" cy="155.15768" r="24.6211" fill="#ffb8b8"/><path d="M939.04664,325.21834s-6.62876,26.515,6.62876,33.14378-41.66648,16.09842-45.45434,0l1.89393-7.57572s7.57573-9.46965,5.68179-17.99234Z" transform="translate(-157.1904 -160.11752)" fill="#ffb8b8"/><path d="M924.36868,358.83561s-16.34007,1.526-21.42752-9.18015c0,0-38.23128,2.55139-46.754,37.58911,9.89088.283,22.16074,112.83482,5.95021,124.05246-13.15874,9.10582,22.70631,23.13129,72.6479,23.67414l37.87863-1.89393c-7.06282-6.08448-23.96336-85.27142-13.25752-84.27992,0,0,28.409-44.50737,25.568-51.13613s-7.39048-32.76573-43.94129-43.37138C941.03317,354.28981,940.46709,359.78257,924.36868,358.83561Z" transform="translate(-157.1904 -160.11752)" fill="#e6e6e6"/><path d="M972.66391,381.56278l12.31055,16.09841s12.31055,67.23454,8.52269,68.1815-26.515,8.52269-30.30289,5.6818S942.361,412.81263,942.361,412.81263Z" transform="translate(-157.1904 -160.11752)" fill="#e6e6e6"/><path d="M872.28558,376.828l-16.09841,10.41662S832.513,453.53214,839.14179,456.373s43.56041.947,43.56041.947Z" transform="translate(-157.1904 -160.11752)" fill="#e6e6e6"/><path d="M946.54636,293.24121s-8.52806-18.47745-24.8735-14.21342-25.58419,10.66007-26.29482,17.0561.35534,15.9901.35534,15.9901,1.77666-13.14741,13.14741-10.30472,29.13751.71066,29.13751.71066l2.84268,25.58416s3.198-4.61938,6.75141-1.77669S957.91711,298.92655,946.54636,293.24121Z" transform="translate(-157.1904 -160.11752)" fill="#2f2e41"/><polygon points="885.258 579.242 641.189 579.242 641.189 577.247 885.619 577.247 885.258 579.242" fill="#3f3d56"/></svg> -->
+        <img  class="lg:-mt-12 mt-12 ml-16 shadow-2xl rounded-xl  lg:ml-0 " src="./pics/undraw_online_media_62jb.png" width="70%">
+    </div>
+    </div>
+
+
+
+<div class="grid sm:grid-cols-4 mt-24 ml-3 lg:px-32">
+
+    <div class="shadow-2xl rounded-2xl  lg:w-11/12">
+        <img  class=" inline w-24" src="./pics/vectorstock_9846678/vectorstock_9846678/vectorstock_9846678.jpg" width="100%">
+        <p class="font-semibold inline "> 40,000+ doubts cleared </p>
+    
+    </div>
+
+<div class="shadow-2xl rounded-2xl mt-4 lg:mt-0 lg:w-4/5 " >
+        <img class="w-24 inline" src="./pics/vectorstock_33730232/vectorstock_33730232/vectorstock_33730232.jpg" width="100%">
+            <p class=" text-center inline font-semibold"> 20+ State Boards   </p>
+        </div>
+
+        <div class="shadow-2xl rounded-2xl mt-4 lg:mt-0 lg:w-4/5 ">
+            <img class="inline w-24" src="./pics/vectorstock_21321140/vectorstock_21321140/vectorstock_21321140.jpg" width="100%">
+            <p class="inline font-semibold text-center">100,000 + Lectures</p>
+            </div>
+
+            <div class="shadow-2xl rounded-2xl lg:mt-0 mt-4 lg:w-11/12 ">
+                <img class="inline lg:w-24 w-32 " src="./pics/woman-sitting-meditating-pile-books-student-study-learning-flat-vector-illustration-education-knowledge/8686.jpg" width="100%">
+            <p class="inline text-center font-semibold">
+                5000+ Books Covered
+            </p>
+            </div>
+
+
+</div>
+
+
+     <!-- <div class="grid sm:grid-cols-4 lg:mt-32  mt-16  lg:ml-32 pl-24 lg:flex justify-center py-3ed-xl  shadow-2xl w-40 ">
+<img  class="inline" src="./pics/vectorstock_9846678/vectorstock_9846678/vectorstock_9846678.jpg" width="100%">
+<p class="inline   font-semibold "> 40,000 plus doubts cleared </p>
+</div>
+<div    class=" w-40 rounded-2xl pt-12 lg:pt-0 shadow-2xl" >
+<img class="inline" src="./pics/vectorstock_33730232/vectorstock_33730232/vectorstock_33730232.jpg" width="100%">
+    <p class="inline text-center font-semibold"> 20+ State Boards   </p>
+</div>
+
+<div class="rounded-3xl w-40 rounded-br-3xl pt-12 lg:pt-0 shadow-2xl">
+<img class="inline" src="./pics/vectorstock_21321140/vectorstock_21321140/vectorstock_21321140.jpg" width="100%">
+<p class="inline font-semibold text-center">100,000 + Lectures</p>
+</div>
+<div class="rounded-3xl w-40  pt-12 lg:pt-0 shadow-2xl">
+    <img class="inline" src="./pics/woman-sitting-meditating-pile-books-student-study-learning-flat-vector-illustration-education-knowledge/8686.jpg" width="100%">
+<p class="inline text-center font-semibold">
+    5000+ Books Covered
+</p>
+</div>
+
+</div> -->
+
+<div class="grid sm:grid-cols-2 lg:mt-32 mt-16 lg:px-32 ">
+
+<div>
+    <p class="font-extrabold lg:text-5xl text-2xl text-center pl-1 lg:pl-0 text-gray-800 ">Solve Your Doubts <span class="text-blue-800">Faster</span>.</p>
+<div class="pl-16 pt-10">
+   <img class="inline pr-2" src="./pics/vectorstock_25197385/vectorstock_25197385/vectorstock_25197385.jpg" width="9%">
+<p class="inline font-semibold lg:text-3xl text-xl " >Accessible Everywhere</p>
+</div>
+<p class="lg:pl-32 pl-24 lg:font-bold pt-2  text-gray-700">Access the quality education anytime, anywhere.</p>
+
+<div>
+
+<div class="pl-16 pt-10">
+   <img class="inline pr-2" src="./pics/vectorstock_25197385/vectorstock_25197385/vectorstock_25197385.jpg" width="9%">
+<p class="inline font-semibold lg:text-3xl text-xl " >1 Million Plus Videos!</p>
+</div>
+<p class="lg:pl-32 pl-24 pr-8  pt-2 lg:font-bold  text-gray-700">Unlimited access To Video Solutions.</p>
+</div>
+</div>
+
+<div class="lg:-mt-10 ">
+   <img src="./pics/students-studying-textbooks/5294.jpg">
+</div>
+
+</div>
+
+<div>
+    <p class="font-extrabold text-xl text-center lg:pr-10  lg:pl-0 text-gray-800 lg:mt-20 mt-10 mb-10">
+        How it Works!
+    </p>
+
+</div>
+
+<div></div>
+<div class="grid sm:grid-cols-3 lg:ml-32    md:ml-16 ml-4   lg:px-64">
+<div class="pl-24 md:pl-0 md:ml-0"> 
+    <img class="inline border-gray-500 border-4  shadow-2xl rounded-full " src="./pics/mind-map-concept-illustration/4549495.jpg" width="60%">
+<span class="pl-24 md:pl-4"><svg class=" md:inline hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+
+<p class="font-semibold md:pr-20 pl-6 md:pl-0 pb-8 md:pb-0 pt-6">Have a Doubt?</p>
+</div>
+
+<div class="ml-24 md:ml-0">
+    <img class="inline border-gray-500 border-4 shadow-2xl rounded-full"  src="./pics/vecteezy_online-class-icons-with-woman-teaching-vector-illustration_1240473/2488_R0lVIERBTiA1NTQtMjg.jpg" width="60%">
+    <span class="pl-16"><svg class="  md:inline  hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+    
+    <p class="font-semibold lg:pr-20 pl-6 md:pl-0 pt-6 pb-4 md:pb-0">Type Your Question<br>Or Upload Image.</p>
+</div>
+
+<div class="ml-24 mt-5 md:mt-0 md:ml-0">
+<img class="inline border-gray-500 border-4 shadow-2xl  rounded-full" src="./pics/bulb/Business Marketing Elements2_RF_RMPL-01.jpg" width="60%">
+<p class="font-semibold pl-6 md:pl-0 pt-6">Get Your Solution!</p>
+
+</div>
+</div>
+
+
+<p class="mt-32 text-center lg:pr-12  lg:pl-0 "><a class="bg-red-600 inline text-white font-semibold hover:bg-white hover:text-red-600 p-3 rounded-xl" href="#">Clarify Your Doubt Now!!</a>
+
+</p>
+
+    <div class="grid sm:grid-cols-2  lg:px-48  mt-16">
+    <div class="rounded-xl shadow-2xl lg:mr-6  ">
+<img src="./pics/vecteezy_online-education-during-coronavirus-outbreak-vector-illustration_1402258/2209_R0lVIEpFTiA3ODAtMTE.jpg" width="90%">
+    </div>
+
+
+
+    <div class="mt-12 lg:ml-32 ">
+        <div class="pl-16 lg:pl-0">
+        <img class="inline pr-2" src="./pics/vectorstock_25197385/vectorstock_25197385/vectorstock_25197385.jpg" width="9%">
+<p class="inline font-semibold lg:text-3xl text-xl " >Accessible Everywhere</p>
+</div>
+<p class="   pl-24 lg:font-bold font-semibold  mt-2 text-gray-700">Access the quality education anytime, anywhere.</p>
+
+<div class="pt-10  pl-16 lg:pl-0">
+    <img class="inline pr-2" src="./pics/vectorstock_25197385/vectorstock_25197385/vectorstock_25197385.jpg" width="9%">
+<p class="inline font-semibold lg:text-3xl text-xl " >Expert Teachers</p>
+</div>
+<p class=" pl-24 lg:font-bold font-semibold  mt-2  text-gray-700"> Unlimited Access to video <br>solutions.</p>
+
+<div class="pt-10 pl-16 lg:pl-0">
+    <img class="inline pr-2" src="./pics/vectorstock_25197385/vectorstock_25197385/vectorstock_25197385.jpg" width="9%">
+<p class="inline font-semibold lg:text-3xl text-xl  " >Interactive Sessions</p>
+</div>
+<p class="   pl-24 lg:font-bold font-semibold  mt-2    text-gray-700">Small group for maximum student<br> interaction.</p>
+
+
+</div>
+</div>
+
+<p class="font-extrabold mt-20 text-blue-700 text-3xl  lg:pl-0 text-center">First Class Free!</p>
+<p class="text-center mt-10  lg:ml-0"><a class="bg-red-600 inline font-semibold hover:bg-white hover:text-red-600 text-white  py-3 px-4 shadow-xl rounded-xl" href="#">Book your First Class Now!!</a></p>
+<p class="text-center font-extrabold mt-16 md:text-4xl text-3xl lg:text-5xl"><span class="text-blue-700">Jee</span> mains And Advance Prepration. </p>
+<!-- Two Caraousals Left -->
+
+
+<div class="cara overflow-y-hidden overflow-x-hidden">
+    <div>
+        <div class="grid sm:grid-cols-2 mt-16 lg:px-56 lg:ml-16 ">
+
+            <div class=" lg:w-3/4 shadow-2xl ">
+                <img class="rounded-xl" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+            </div>
+            <div class=" mt-10">
+                <p class="font-extrabold text-blue-700 md:text-3xl text-2xl lg:pl-0 pl-12 lg:text-4xl">Micro Concept Videos</p>
+                <p class="mt-2 font-semibold  lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+            </div>
+                
+        </div>
+    </div>
+    <div>
+        <div class="grid sm:grid-cols-2 mt-16 lg:px-56 lg:ml-16 ">
+
+            <div class=" lg:w-3/4 shadow-2xl ">
+                <img class="rounded-lg" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+            </div>
+            <div class=" mt-10">
+                <p class="font-extrabold text-blue-700 md:text-3xl text-2xl lg:pl-0 pl-12  lg:text-4xl">Micro Concept Videos</p>
+                <p class="mt-2 font-semibold lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+            </div>
+                
+        </div> 
+    </div>
+    <div> 
+        <div class="grid sm:grid-cols-2 mt-16 lg:px-56 lg:ml-16 ">
+
+            <div class=" lg:w-3/4 shadow-2xl ">
+                <img class="rounded-xl" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+            </div>
+            <div class=" mt-10">
+                <p class="font-extrabold text-blue-700 md:text-3xl lg:pl-0 pl-12 text-2xl lgtext-4xl">Micro Concept Videos</p>
+                <p class="mt-2 font-semibold lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+            </div>
+                
+        </div> 
+    </div>
+</div>
+<p class="text-center mt-24"><a class="bg-red-600 font-semibold hover:bg-white hover:text-red-600 text-white  py-3 px-4 rounded-xl shadow-xl" href="#">Prepare for Jee Now</a></p>
+
+<p class="text-center font-extrabold mt-16 md:text-4xl text-3xl lg:text-5xl"><span class="text-blue-700">Neet</span> Prepration. </p>
+ <!-- Two Caraousals Left  -->
+
+
+ <div class="cara2 overflow-x-hidden overflow-y-hidden">
+<div>
+    <div class="grid sm:grid-cols-2 mt-16  lg:px-56 lg:ml-16 ">
+            <div class=" lg:w-3/4  shadow-2xl rounded-xl ">
+            <img class="rounded-lg" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+             </div>
+            <div class=" mt-10">
+            <p class="font-extrabold text-blue-700  md:text-3xl lg:pl-0 pl-12 text-2xl  lg:text-4xl">Micro Concept Videos</p>
+            <p class="mt-2 font-semibold lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="grid sm:grid-cols-2 mt-16 lg:px-56 lg:ml-16 ">
+                <div class=" lg:w-3/4  shadow-2xl rounded-xl ">
+                <img class="rounded-lg" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+                 </div>
+                <div class="mt-10">
+                <p class="font-extrabold text-blue-700 md:text-3xl lg:pl-0 pl-12 text-2xl lg:text-4xl">Micro Concept Videos</p>
+                <p class="mt-2 font-semibold lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="grid sm:grid-cols-2 mt-16 lg:px-56 lg:ml-16 ">
+                    <div class=" lg:w-3/4  shadow-2xl rounded-xl ">
+                    <img class="rounded-lg" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%">
+                     </div>
+                    <div class=" mt-10">
+                    <p class="font-extrabold text-blue-700 md:text-3xl lg:pl-0 pl-12 text-2xl lg:text-4xl">Micro Concept Videos</p>
+                    <p class="mt-2 font-semibold lg:pl-0 pl-12 text-lg">Find Multilingual video explanations important and frequently confused concepts of some subjects.</p>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<p class="text-center mt-24"><a class="bg-red-600 font-semibold hover:bg-white hover:text-red-600 text-white  py-3 px-4 rounded-xl shadow-xl" href="#">Prepare for Neet Now</a></p>
+
+
+
+
+
+
+<p class="text-center font-extrabold mt-20  lg:ml-6 lg:text-4xl text-2xl text-blue-700">Explore The Subject with Us!</p>
+
+<div class="grid md:grid-cols-4 grid-cols-2 pl-6  mt-16 md:pl-4  lg:pl-20 lg:px-16 lg:ml-48">
+
+<div class="shadow-2xl  w-40  rounded-2xl">
+    <img class="rounded-2xl " src="./pics/background-about-physics/OIUFOY0.jpg" width="100%">
+        <p class="text-center text-lg font-bold text-indigo-800">Physics</p>
+</div>
+<div class="shadow-2xl w-40   rounded-2xl">
+    <img  class="rounded-2xl" src="./pics/biology-laboratory-workspace-design-concept/11559.jpg" width="100%">
+<p class="text-center text-lg font-bold pt-1 text-indigo-800">Biology</p>
+</div>
+<div class="shadow-2xl w-40 py-4 lg:py-0 md:py-0  rounded-2xl">
+    <img class="rounded-2xl" src="./pics/cartoon-maths-elements-background/2378412.jpg" width="100%">
+<p class="text-center text-lg font-bold pt-1 text-indigo-800"> Maths</p>
+</div>
+
+<div class="shadow-2xl w-40 py-4 lg:py-0 md:py-0 rounded-2xl">
+    <img class="rounded-2xl" src="./pics/chemical-laboratory-workspace-design-concept/11560.jpg" width="100%">
+<p class="text-center text-lg font-bold pt-1 text-indigo-800">Chemistry</p>
+</div>
+</div>
+
+<p class=" float-right inline mr-24 font-semibold mt-6 text-lg  hover:bg-white hover:text-red-600  text-red-700">View More!
+    <span><svg class="w-6 inline text-red-700 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path></svg></span>
+</p>
+
+<p class="font-extrabold lg:text-6xl text-2xl text-center mt-24 text-blue-700">Free Access To <span class="text-gray-800">5000+ Books</span></p>
+<p class="text-center mt-4 ">Get access to the virtual library of 5000+ books and reference books of various statebords and competitive exam. </p>
+
+<div class="grid lg:grid-cols-5 ml-8 md:grid-cols-4 grid-cols-2 mt-16 lg:ml-32 lg:px-48">
+    <div class="w-32 shadow-2xl md:block rounded-2xl  md:mb-5 lg:mb-5">
+        <img src="./pics/book1.png" width="100%" >
+    <p class="font-bold text-center">HC Verma</p>
+    </div>
+
+    <div class="w-32 shadow-2xl md:block rounded-xl  md:mb-5 lg:mb-5">
+        <img src="./pics/book2.png" width="100%" >
+        <p class="font-bold text-center">Sl Arora</p>
+    </div>
+
+    <div class="w-32 shadow-2xl hidden md:block rounded-xl mb-5">
+        <img src="./pics/book3.png" width="100%">
+        <p class="font-bold text-center">I.E Irodov</p>
+    </div>
+
+    <div class="w-32 shadow-2xl hidden md:block rounded-xl mb-5">
+        <img src="./pics/book6.jpg" width="100%">
+        <p class="font-bold text-center"> G Tewani </p>
+    </div>
+    
+<div class="w-32 shadow-2xl hidden md:block rounded-xl mb-5">
+        <img src="./pics/book5.jpg" width="100%">
+    <p class="font-bold text-center">R.D Sharma</p>
+    </div>
+    
+    <div class="w-32 shadow-2xl md:block hidden rounded-xl mb-5">
+        <img src="./pics/book5.jpg" width="100%">
+        <p class="font-bold text-center">S.L Loney</p>
+    </div>
+    <div class="w-32 shadow-2xl md:block hidden rounded-xl mb-5">
+        <img src="./pics/book4.png" width="100%">
+        <p class="font-bold text-center">O.P Tandon</p>
+    </div>
+    <div class="w-32 shadow-2xl md:block hidden rounded-xl mb-5">
+        <img src="./pics/book2.png" width="100%">
+        <p class="font-bold text-center">R.C Mukherjee</p>
+    </div>
+    <div class="w-32 shadow-2xl md:block hidden rounded-xl mb-5">
+        <img src="./pics/book3.png" width="100%">
+        <p class="font-bold text-center">M.S Chauhan</p>
+    </div>
+    <div class="w-32 shadow-2xl md:block hidden mb-5 rounded-xl">
+        <img src="./pics/book1.png" width="100%">
+        <p class="font-bold text-center">N.C.E.R.T</p>
+    </div>
+
+    </div>
+
+    <div id="expand" class="hidden">
+        <div class="grid lg:grid-cols-5 ml-8 md:grid-cols-4  grid-cols-2 mt-16 lg:ml-32 lg:px-48">
+            <div class="w-32 shadow-2xl hidden rounded-2xl mb-5">
+                <img src="./pics/book1.png" width="100%" >
+            <p class="font-bold text-center">HC Verma</p>
+            </div>
+        
+            <div class="w-32 shadow-2xl hidden rounded-xl mb-5">
+                <img src="./pics/book2.png" width="100%" >
+                <p class="font-bold text-center">Sl Arora</p>
+            </div>
+        
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book3.png" width="100%">
+                <p class="font-bold text-center">I.E Irodov</p>
+            </div>
+        
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book6.jpg" width="100%">
+                <p class="font-bold text-center"> G Tewani </p>
+            </div>
+            
+        <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book5.jpg" width="100%">
+            <p class="font-bold text-center">R.D Sharma</p>
+            </div>
+            
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book5.jpg" width="100%">
+                <p class="font-bold text-center">S.L Loney</p>
+            </div>
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book4.png" width="100%">
+                <p class="font-bold text-center">O.P Tandon</p>
+            </div>
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book2.png" width="100%">
+                <p class="font-bold text-center">R.C Mukherjee</p>
+            </div>
+            <div class="w-32 shadow-2xl rounded-xl mb-5">
+                <img src="./pics/book3.png" width="100%">
+                <p class="font-bold text-center">M.S Chauhan</p>
+            </div>
+            <div class="w-32 shadow-2xl mb-5 rounded-xl">
+                <img src="./pics/book1.png" width="100%">
+                <p class="font-bold text-center">N.C.E.R.T</p>
+            </div>
+            </div>
+    </div>
+    
+
+<div id="button" class="mt-4 md:hidden block text-center ">
+   <span class="bg-red-600 font-semibold hover:bg-white hover:text-red-600 text-white  py-3 px-4 rounded-xl shadow-xl"> More</span>
+</div>
+<p class="font-extrabold text-center text-5xl text-blue-800 mt-16 ">State Boards</p>
+<p class="text-center font-semibold mt-2">Learn Your Board Syllabus With our best teacher us. </p>
+
+
+
+<div class="grid lg:grid-cols-5 md:grid-cols-4 pl-12 grid-cols-2 lg:ml-24 lg:px-48 mt-12">
+
+  <div class="w-32 shadow-2xl mb-5 rounded-xl">
+        <img src="./pics/1.jpg" width="100%">
+    <p class="text-center font-bold">Delhi</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 rounded-xl">
+        <img src="./pics/2.jpg" width="100%">
+        <p class="text-center font-bold">Punjab</p>
+    </div>
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/3.png" width="100%">
+        <p class="text-center font-bold">Tamil Nadu</p>
+    </div>
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/4.png" width="100%">
+        <p class="text-center font-bold"> Telangana</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/5.png" width="100%">
+        <p class="text-center font-bold">Uttar Pradesh</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/5.png" width="100%">
+        <p class="text-center font-bold">Andhra Pradesh</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/4.png" width="100%">
+        <p class="text-center font-bold">Gujarat</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/2.jpg" width="100%">
+        <p class="text-center font-bold">Bihar</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/3.png" width="100%">
+        <p class="text-center font-bold">Karnataka</p>
+    </div>
+
+    <div class="w-32 shadow-2xl mb-5 md:block hidden rounded-xl">
+        <img src="./pics/1.jpg" width="100%">
+        <p class="text-center font-bold">West Bengal</p>
+    </div>
+</div>
+
+<div id="expand1" >
+<div class=" md:hidden block">
+    <div class="grid lg:grid-cols-5 md:grid-cols-4 pl-12 grid-cols-2 lg:ml-24 lg:px-48 mt-12">
+
+        <div class="w-32 shadow-2xl mb-5 hidden rounded-xl">
+              <img src="./pics/1.jpg" width="100%">
+          <p class="text-center font-bold">Delhi</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl hidden mb-5 rounded-xl">
+              <img src="./pics/2.jpg" width="100%">
+              <p class="text-center font-bold">Punjab</p>
+          </div>
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/3.png" width="100%">
+              <p class="text-center font-bold">Tamil Nadu</p>
+          </div>
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/4.png" width="100%">
+              <p class="text-center font-bold"> Telangana</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/5.png" width="100%">
+              <p class="text-center font-bold">Uttar Pradesh</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/5.png" width="100%">
+              <p class="text-center font-bold">Andhra Pradesh</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/4.png" width="100%">
+              <p class="text-center font-bold">Gujarat</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/2.jpg" width="100%">
+              <p class="text-center font-bold">Bihar</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/3.png" width="100%">
+              <p class="text-center font-bold">Karnataka</p>
+          </div>
+      
+          <div class="w-32 shadow-2xl mb-5 rounded-xl">
+              <img src="./pics/1.jpg" width="100%">
+              <p class="text-center font-bold">West Bengal</p>
+          </div>
+      </div> 
+</div>
+</div>
+
+<div id="button1" class="mt-4 md:hidden block text-center ">
+    <span class="bg-red-600 font-semibold hover:bg-white hover:text-red-600 text-white  py-3 px-4 rounded-xl shadow-xl"> More</span>
+    
+  
+ </div>
+<!-- Carousel Left -->
+<p class="font-extrabold text-5xl text-gray-800 text-center mt-16">Meet our expert teachers.</p>
+    
+
+
+
+
+ <div class="grid sm:grid-cols-2   lg:mr-32">
+    <div class="flex justify-start lg:ml-10 mt-12">
+        <div class="lg:w-32">
+        <img class="rounded-full inline shadow-2xl lg:w-48 w-48 lg:h-32" src="./pics/christopher-campbell-wtZgw1nQ3FI-unsplash.jpg" width="100%" alt="">
+    </div>
+    <div class="lg:w-3/12 lg:h-32 ml-10 shadow-2xl rounded-2xl">
+        <p class="px-1 py-2 lg:pt-0 pt-6 font-semibold"> ipsum dolor sit, amet consect adipisg elit. Ani perdis distinctio  Ani perdis distinctio.</p>
+    </div>
+    </div>
+
+
+    <div class="flex justify-start   mt-12">
+        <div class="lg:w-32">
+        <img class="rounded-full inline shadow-2xl lg:w-48 w-48 lg:h-32" src="./pics/christopher-campbell-wtZgw1nQ3FI-unsplash.jpg" width="100%" alt="">
+    </div>
+    <div class="lg:w-3/12 lg:h-32 ml-10 shadow-2xl rounded-2xl">
+        <p class="px-1 py-2 lg:pt-0 pt-6 font-semibold ">  ipsum dolor sit, amet consect adipisg elit. Ani perdis distinctio Lorem ipsum dolor sit.</p>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid sm:grid-cols-2 lg:ml-32 ">
+        <div class="flex justify-start lg:ml-20  mt-12">
+            <div class="lg:w-32">
+            <img class="rounded-full inline shadow-2xl lg:w-48 w-48 lg:h-32" src="./pics/christopher-campbell-wtZgw1nQ3FI-unsplash.jpg" width="100%" alt="">
+        </div>
+        <div class="lg:w-3/12 lg:h-32 ml-10 shadow-2xl rounded-2xl">
+            <p class="px-1 py-2 lg:pt-0 pt-6 font-semibold"> ipsum dolor sit, amet consect adipisg elit. Ani perdis distinctio  Ani perdis distinctio.</p>
+        </div>
+        </div>
+    
+    
+        <div class="flex justify-start  lg:ml-24  mt-12">
+            <div class="lg:w-32">
+            <img class="rounded-full inline shadow-2xl lg:w-48 w-48 lg:h-32" src= "./pics/christopher-campbell-wtZgw1nQ3FI-unsplash.jpg" width="100%" alt="">
+        </div>
+        <div class="lg:w-3/12 lg:h-32 ml-10 shadow-2xl rounded-2xl">
+            <p class="px-1 py-2 lg:pt-0 pt-6 font-semibold"> ipsum dolor sit, amet consect adipisg elit. Ani perdis distinctio Lorem ipsum dolor.</p>
+        </div>
+ </div>
+ </div>
+    
+
+
+<p class="font-extrabold text-5xl text-gray-800 text-center mt-16">See What Our Students Say.</p>
+
+
+    <div class="grid sm:grid-cols-2 mt-10 lg:px-48 lg:ml-24">
+
+        <div class="lg:w-5/6">
+            <img src="pics/undraw_professor_8lrt.svg" width="100%" alt="">
+        </div>
+    
+<div class="cara3 lg:w-3/5 lg:ml-32 overflow-y-hidden overflow-x-hidden lg:mt-0 mt-6">
+    <div class="shadow-2xl lg:w-3/5 lg:h-auto rounded-3xl ">
+        <img   src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg"  alt="">
+        <p class="font-semibold overflow-y-hidden p-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptatem nesciunt aut deserunt modi totam sint delectus esse, quam laudantium officia optio illo eligendi non dolorem eum mollitia dolores dicta!.
+        </p>
+        </div>
+        <div class="shadow-2xl lg:w-3/5 lg:h-auto rounded-3xl ">
+            <img   src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg"  alt="">
+            <p class="font-semibold overflow-y-hidden p-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptatem nesciunt aut deserunt modi totam sint delectus esse, quam laudantium officia optio illo eligendi non dolorem eum mollitia dolores dicta!.
+            </p>
+            </div>
+</div>
+
+ <!-- <div class="shadow-xl">
+    <div class="flex justify-end lg:pr-40 lg:pb-20 mt-20">
+<div class="lg:w-32 w-32 pt-4">
+    <img class="rounded-full shadow-2xl" src="./pics/ryan-mendoza-_in8No6ABMw-unsplash.jpg" width="100%" alt="">
+</div>
+
+<div class="ml-5 p-2 shadow-2xl rounded-3xl lg:w-32  lg:h-32">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore 
+</div>
+    </div>
+</div> -->
+</div>
+
+ </div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
